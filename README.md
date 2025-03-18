@@ -1,12 +1,12 @@
 # problemstatement2
 
-DEVX: CODE. CREATE. CONQUER - Event organized by IETE Amrita Club
+# DEVX: CODE. CREATE. CONQUER - Event organized by IETE Amrita Club
 
-TEAM NAME: main_character_energy.js
+# TEAM NAME: main_character_energy.js
 
-TECH STACK USED: HTML, CSS and JAVASCRIPT
+# TECH STACK USED: HTML, CSS and JAVASCRIPT
 
-SET-UP INSTRUCTIONS :
+# SET-UP INSTRUCTIONS :
 
 ~ Prerequisites: A text editor (VS Code)
 ~ Hosting Service – Where your website files will be stored.
@@ -14,7 +14,7 @@ EG: GitHub Pages – Best for static sites (HTML, CSS, JS).
 ~ Create a Repository, push your project
 ~Deploy the project (for easy deployment, use Netlify)
 
-FEATURES IMPLEMENTED:
+# FEATURES IMPLEMENTED:
 in each style
 
 # Retro Style (80s/90s)
