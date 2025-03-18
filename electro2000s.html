@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2000s Electronics Store</title>
+    <style>
+        body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f0f0f0;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* NAVIGATION */
+.main-nav {
+    background: linear-gradient(to bottom, #0077cc, #0055aa);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid #003366;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    background-color: #d9e2f3;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #003366;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 7px;
+    border: 2px inset #666;
+    font-size: 14px;
+}
+
+.search-bar button {
+    padding: 7px 15px;
+    background: linear-gradient(to bottom, #0066cc, #003366);
+    border: 2px outset #0066cc;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: linear-gradient(to bottom, #003366, #0066cc);
+}
+
+
+.navbar {
+    background: #003366;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    border: 2px solid #003366;
+    background: white;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #003366;
+}
+
+.product button {
+    background: #0055a5;
+    color: white;
+    border: 1px solid #003366;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.product button:hover {
+    background: #003366;
+}
+
+.cart {
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #003366;
+    font-family: Arial, sans-serif;
+}
+
+.cart h2 {
+    color: #003366;
+}
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+             <li><a href="mainbody.html">Home</a></li>
+             <li><a href="#">Toys</a></li>
+             <li><a href="fashion.html">Fashion</a></li>
+             <li><a href="#">Electronics</a></li>
+        </ul>
+     </nav>
+
+    <div class="navbar">
+        <marquee behavior="scroll" direction="left">🔥 Welcome to the Ultimate 2000s Electronics Store! 🔥</marquee>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products, brands, or trends">
+        <button>Search</button>
+    </div>
+
+    <table width="100%" cellpadding="10">
+        <tr>
+            <td width="80%" valign="top">
+                <div class="container">
+                    
+                    <div class="product">
+                        <h3>PlayStation 2</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrYBMnkJXtZ2Z7042Megj6P0JQ0PHLXhEGqw&s" alt="PlayStation 2">
+                        <p>The legendary PS2 with amazing games.</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product">
+                        <h3>Nintendo Game Boy</h3>
+                        <img src="Nint.2.jpeg" alt="Nintendo Game Boy">
+                        <p>Portable gaming at its peak!</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product">
+                        <h3>Nokia 3310</h3>
+                        <img src="https://c8.alamy.com/comp/2EM5GWF/nokia-6230i-a-classic-and-bestselling-candybar-mobile-phone-from-the-early-2000s-2EM5GWF.jpg" alt="Nokia 3310">
+                        <p>Unbreakable, classic phone.</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product">
+                        <h3>Windows XP PC</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRJfu7lS3a3gbfbNjwvMDOyMHtoN813iZemA&s" alt="Windows XP PC">
+                        <p>Iconic OS for the golden era.</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product">
+                        <h3>Apple iMac G3</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiMUmcZa9G_3z7nDEgfkYipAisR2PQzYJYDg&s" alt="Apple iMac G3">
+                        <p>Colorful, futuristic desktop.</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="cart">
+        <h2>Your Shopping Cart</h2>
+        <p>No items added yet.</p>
+    </div>
+
+</body>
+</html>
