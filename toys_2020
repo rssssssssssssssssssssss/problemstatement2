@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Galaxy - Modern Toy Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .header {
+            background: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #f0f0f0;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        .navbar a:hover {
+            color: #555;
+        }
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .footer {
+            background: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        .back-button {
+            display: block;
+            margin: 40px auto 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background: #444;
+        }
+    </style>
+    <script>
+        function showBestSeller() {
+            document.getElementById("products").innerHTML = `
+                <div class="product">
+                    <img src="https://finebuy.co.in/wp-content/uploads/2023/07/happy-toys-car7.webp" alt="RC Car">
+                    <h3>Remote Control Car</h3>
+                    <p>Price: $49.99</p>
+                </div>
+                <button class="back-button" onclick="showAllProducts()">Go Back</button>`;
+        }
+        
+        function showAllProducts() {
+            document.getElementById("products").innerHTML = `
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmLpRg4umF4ctSdUN_mhWhyGv--kqO-7R9A&s" alt="Lego Set">
+                    <h3>LEGO Ninjago</h3>
+                    <p>Price: $39.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://finebuy.co.in/wp-content/uploads/2023/07/happy-toys-car7.webp" alt="RC Car">
+                    <h3>Remote Control Car</h3>
+                    <p>Price: $49.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71nTSnwD1zL.jpg" alt="Dollhouse">
+                    <h3>Barbie Dreamhouse</h3>
+                    <p>Price: $129.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.meesho.com/images/products/383114338/lwr5y_512.webp" alt="Puzzle Set">
+                    <h3>3D Puzzle Set</h3>
+                    <p>Price: $19.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/action-figure/y/k/t/6-demon-slayer-anime-action-figure-20-cm-for-home-decors-office-original-imagzh8jbhz9mnmn.jpeg?q=20&crop=false" alt="Action Figure">
+                    <h3>Superhero Action Figure</h3>
+                    <p>Price: $24.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBRF5hFid7JkOU5cjYetdYjp7WGGQ0QJJZVA&s" alt="Board Game">
+                    <h3>Monopoly</h3>
+                    <p>Price: $29.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/stuffed-toy/u/b/a/soft-plush-cat-toy-safe-huggable-stuffed-animal-for-kids-original-imah7fetzh7xgk9x.jpeg?q=20&crop=false" alt="Plush Toy">
+                    <h3>Cute Plush Toy</h3>
+                    <p>Price: $15.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/41phLDbtP+L._AC_UF1000,1000_QL80_.jpg" alt="Toy Drone">
+                    
+                    <h3>Mini Toy Drone</h3>
+                    <p>Price: $59.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCB5DeJEQddkUGXU6cmRwndRuxSz7yNxvqdg&s" alt="RC Boat">
+                    <h3>Remote Control Boat</h3>
+                    <p>Price: $69.99</p>
+                </div>`;
+        }
+    </script>
+</head>
+<body>
+    <div class="header">Toy Galaxy - Explore the Best Toys</div>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a onclick="showBestSeller()">Best Sellers</a>
+    </div>
+    <div class="container">
+        <div id="products" class="products-container">
+            <script>showAllProducts();</script>
+        </div>
+    </div>
+    <div class="footer">&copy; 2025 Toy Galaxy - Bringing Joy to Every Child</div>
+</body>
+</html>
