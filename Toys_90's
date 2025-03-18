@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Style Toys Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFBEA;
+            color: black;
+            margin: 0;
+        }
+        .header {
+            background-color: green;
+            color: yellow;
+            padding: 10px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .navbar {
+            background-color: darkgreen;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .product {
+            border: 1px solid red;
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+        .product img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: darkgreen;
+            color: yellow;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .back-button {
+            background-color: grey;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+    <script>
+        function showBestSeller() {
+            document.getElementById("content").innerHTML = `
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/e2/92/58/e29258beb3d2e3a0f326ca767c706519.jpg" alt="Space LEGO Set">
+                    <h3>LEGO Space Explorer Set</h3>
+                    <p>Price: $29.99</p>
+                    <p>Amazing LEGO space set with astronaut figures and spaceship.</p>
+                </div>
+                <br>
+                <div style="text-align: center; width: 100%;">
+    <button class="back-button" onclick="showAllToys()">Go Back</button>
+</div>
+
+            `;
+        }
+        function showAllToys() {
+            document.getElementById("content").innerHTML = `
+                <div class="product">
+                    <img src="https://i.etsystatic.com/16492194/r/il/22945f/1516174990/il_fullxfull.1516174990_g89g.jpg" alt="Woody Action Figure">
+                    <h3>Toy Story Woody Action Figure</h3>
+                    <p>Price: $19.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/e2/92/58/e29258beb3d2e3a0f326ca767c706519.jpg" alt="Space LEGO Set">
+                    <h3>LEGO Space Explorer Set</h3>
+                    <p>Price: $29.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71NwQ27VfdL._AC_UF1000,1000_QL80_.jpg" alt="Tamagotchi">
+                    <h3>Tamagotchi Digital Pet</h3>
+                    <p>Price: $14.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtP8w0iT_ev7RNdowgTwx9FV42k4Ou7pYyXw&s" alt="Megazord">
+                    <h3>Power Rangers Megazord</h3>
+                    <p>Price: $39.99</p>
+                </div>
+                
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71NwQ27VfdL._AC_UF1000,1000_QL80_.jpg" alt="Tamagotchi">
+                    <h3>Tamagotchi Digital Pet</h3>
+                    <p>Price: $14.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtP8w0iT_ev7RNdowgTwx9FV42k4Ou7pYyXw&s" alt="Megazord">
+                    <h3>Power Rangers Megazord</h3>
+                    <p>Price: $39.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJWaEgK_zshhF3yIV-kp5S6czS_ZIfTBkVog&s" alt="Hot Wheels">
+                    <h3>Hot Wheels Track Set</h3>
+                    <p>Price: $24.99</p>
+                </div>
+                 <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY66IZmm_wn285syvEs0PiMC8WVLlH7FMEBw&s" alt="Polly Pocket">
+                <h3>Polly Pocket Playset</h3>
+                <p>Price: $18.99</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTarsxwLKYqwzzYYogIxcXOrm2YCpzzWyqUgQ&s" alt="Game Boy">
+                <h3>Nintendo Game Boy</h3>
+                <p>Price: $99.99</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMxF2F3k1EmmBNLIcgCvdLOLrWIbVf-aBlA&s" alt="Super Soaker">
+                <h3>Super Soaker Water Gun</h3>
+                <p>Price: $22.99</p>
+            </div>
+            <div class="product">
+                <img src="https://i5.walmartimages.com/seo/Etch-A-Sketch-Pocket-Drawing-Toy-with-Magic-Screen-for-Ages-3-and-up-Style-May-Vary_9fbd295d-1693-4d2b-be80-c80680d28647.cd83f1e582434cb469233ac56d3d50a8.jpeg?odnHeight=320&odnWidth=320&odnBg=FFFFFF" alt="Etch A Sketch">
+                <h3>Etch A Sketch</h3>
+                <p>Price: $15.99</p>
+            </div>
+             <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTwgpvwyw_k86jJ27vcN8xaiShR248wjOYEw&s" alt="Furby">
+                <h3>Furby</h3>
+                <p>Price: $34.99</p>
+            </div>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <div class="header">90s Toys Section</div>
+    <div class="navbar">
+        <a href="#" onclick="showAllToys()">Home</a>
+        <a href="#" onclick="showBestSeller()">Best Sellers</a>
+    </div>
+    <div class="container">
+        <h2>Hot Deals - Save up to 50%</h2>
+        <div class="content" id="content">
+            <div class="product">
+                <img src="https://i.etsystatic.com/16492194/r/il/22945f/1516174990/il_fullxfull.1516174990_g89g.jpg" alt="Woody Action Figure">
+                <h3>Toy Story Woody Action Figure</h3>
+                <p>Price: $19.99</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/e2/92/58/e29258beb3d2e3a0f326ca767c706519.jpg" alt="Space LEGO Set">
+                <h3>LEGO Space Explorer Set</h3>
+                <p>Price: $29.99</p>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71NwQ27VfdL._AC_UF1000,1000_QL80_.jpg" alt="Tamagotchi">
+                <h3>Tamagotchi Digital Pet</h3>
+                <p>Price: $14.99</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtP8w0iT_ev7RNdowgTwx9FV42k4Ou7pYyXw&s" alt="Megazord">
+                <h3>Power Rangers Megazord</h3>
+                <p>Price: $39.99</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJWaEgK_zshhF3yIV-kp5S6czS_ZIfTBkVog&s" alt="Hot Wheels">
+                <h3>Hot Wheels Track Set</h3>
+                <p>Price: $24.99</p>
+            </div>
+             <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY66IZmm_wn285syvEs0PiMC8WVLlH7FMEBw&s" alt="Polly Pocket">
+            <h3>Polly Pocket Playset</h3>
+            <p>Price: $18.99</p>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTarsxwLKYqwzzYYogIxcXOrm2YCpzzWyqUgQ&s" alt="Game Boy">
+            <h3>Nintendo Game Boy</h3>
+            <p>Price: $99.99</p>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMxF2F3k1EmmBNLIcgCvdLOLrWIbVf-aBlA&s" alt="Super Soaker">
+            <h3>Super Soaker Water Gun</h3>
+            <p>Price: $22.99</p>
+        </div>
+        <div class="product">
+            <img src="https://i5.walmartimages.com/seo/Etch-A-Sketch-Pocket-Drawing-Toy-with-Magic-Screen-for-Ages-3-and-up-Style-May-Vary_9fbd295d-1693-4d2b-be80-c80680d28647.cd83f1e582434cb469233ac56d3d50a8.jpeg?odnHeight=320&odnWidth=320&odnBg=FFFFFF" alt="Etch A Sketch">
+            <h3>Etch A Sketch</h3>
+            <p>Price: $15.99</p>
+        </div>
+         <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTwgpvwyw_k86jJ27vcN8xaiShR248wjOYEw&s" alt="Furby">
+            <h3>Furby</h3>
+            <p>Price: $34.99</p>
+        </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 1999 Toys World - All Rights Reserved</div>
+</body>
+</html>
