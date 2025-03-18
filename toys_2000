@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2000s Style Toys Section</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #E0E0E0;
+            color: black;
+            margin: 0;
+            text-align: center;
+            background: linear-gradient(to right, #ff00ff, #00ffff);
+
+        }
+        .header {
+            background: linear-gradient(to right, blue, purple);
+            color: white;
+            padding: 15px;
+            font-size: 26px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 5px solid black;
+        }
+        .navbar {
+            background-color: #3333FF;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #6666FF;
+            padding: 8px 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px gray;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .product {
+            border: 2px solid blue;
+            padding: 15px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 220px;
+            box-shadow: 5px 5px 10px gray;
+        }
+        .product img {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 10px;
+            border: 3px solid black;
+        }
+        .footer {
+            background: linear-gradient(to right, purple, blue);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        .back-button {
+            background-color: #4444FF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin-top: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 3px 3px 6px gray;
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+    </style>
+   <script>
+    function showBestSeller() {
+        document.getElementById("content").innerHTML = `
+            <div class="product">
+                <img src="https://sellet.in/wp-content/uploads/2024/03/Photoroom-20240307_121818_9.jpg" alt="Beyblade Set">
+                <h3>Beyblade Battle Set</h3>
+                <p>Price: $29.99</p>
+                <p>Amazing Beyblade for playing with friends</p>
+            </div>
+            
+            <br>
+            <button class="back-button" onclick="showAllToys()">Go Back</button>
+        `;
+    }
+
+    function showAllToys() {
+        document.getElementById("content").innerHTML = `
+            <div class="products-container">
+                <div class="product">
+                    <img src="https://i.etsystatic.com/16492194/r/il/22945f/1516174990/il_fullxfull.1516174990_g89g.jpg" alt="Woody Action Figure">
+                    <h3>Toy Story Woody Action Figure</h3>
+                    <p>Price: $19.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrrwh1rkCT8hw3luKKo4SRrhcBue9a9-n4OQ&s" alt="Space LEGO Set">
+                    <h3>LEGO Bionicle</h3>
+                    <p>Price: $29.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_38308EgLdfiY8ihLJPwCIXdQrHlgxSeL9A&s" alt="Bratz Dolls">
+                    <h3>Bratz Dolls</h3>
+                    <p>Price: $24.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://sellet.in/wp-content/uploads/2024/03/Photoroom-20240307_121818_9.jpg" alt="Beyblade Set">
+                    <h3>Beyblade Battle Set</h3>
+                    <p>Price: $34.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS897kowYWnNi66--TB8Ur3eO7cihnpp4wQuQ&s" alt="Yu-Gi-Oh Cards">
+                    <h3>Yu-Gi-Oh! Card Deck</h3>
+                    <p>Price: $19.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.etsystatic.com/40373097/r/il/906da0/5714071499/il_fullxfull.5714071499_9wku.jpg" alt="Bakugan Battle Brawlers">
+                    <h3>Bakugan Battle Brawlers</h3>
+                    <p>Price: $22.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://globalnews.ca/wp-content/uploads/2014/11/magnetix-recall.jpg?quality=85&strip=all" alt="Bakugan Battle Brawlers">
+                    <h3>Magnetix</h3>
+                    <p>Price: $10.99</p>
+                </div>
+            </div>
+        `;
+    }
+</script>
+
+</head>
+<body>
+    <div class="header">2000s Toys Section</div>
+    <div class="navbar">
+        <a href="#" onclick="showAllToys()">Home</a>
+        <a href="#" onclick="showBestSeller()">Best Sellers</a>
+    </div>
+    <div class="container">
+        <marquee style="font-size: 22px; color: red; font-weight: bold;">Hot Deals - Save up to 50%!</marquee>
+    
+        <div id="content">
+            <div class="products-container">
+                <div class="product">
+                    <img src="https://i.etsystatic.com/16492194/r/il/22945f/1516174990/il_fullxfull.1516174990_g89g.jpg" alt="Woody Action Figure">
+                    <h3>Toy Story Woody Action Figure</h3>
+                    <p>Price: $19.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrrwh1rkCT8hw3luKKo4SRrhcBue9a9-n4OQ&s" alt="Space LEGO Set">
+                    <h3>LEGO Bionicle</h3>
+                    <p>Price: $29.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_38308EgLdfiY8ihLJPwCIXdQrHlgxSeL9A&s" alt="Bratz Dolls">
+                    <h3>Bratz Dolls</h3>
+                    <p>Price: $24.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://sellet.in/wp-content/uploads/2024/03/Photoroom-20240307_121818_9.jpg" alt="Beyblade Set">
+                    <h3>Beyblade Battle Set</h3>
+                    <p>Price: $34.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS897kowYWnNi66--TB8Ur3eO7cihnpp4wQuQ&s" alt="Yu-Gi-Oh Cards">
+                    <h3>Yu-Gi-Oh! Card Deck</h3>
+                    <p>Price: $19.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.etsystatic.com/40373097/r/il/906da0/5714071499/il_fullxfull.5714071499_9wku.jpg" alt="Bakugan Battle Brawlers">
+                    <h3>Bakugan Battle Brawlers</h3>
+                    <p>Price: $22.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://globalnews.ca/wp-content/uploads/2014/11/magnetix-recall.jpg?quality=85&strip=all" alt="Bakugan Battle Brawlers">
+                    <h3>Magnetix</h3>
+                    <p>Price: $10.99</p>
+                </div> 
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMMSdVIrQh8PZ4RXpegAt7emN0Ge0VwAP2pw&s" alt="Bakugan Battle Brawlers">
+                    <h3>Tech Deck Fingerboards</h3>
+                    <p>Price: $10.99</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+        
+        
+      
+            
+        </div>
+    </div>
+    <div class="footer">&copy; 2005 Toys World - All Rights Reserved</div>
+</body>
+</html>
